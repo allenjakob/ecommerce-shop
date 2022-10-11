@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>STARTER - Toybox Homepage</title>
+	<link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    
+	<!-- skip link -->
+	<a href="mainContent" class="skipLink">To Main Content</a>
+
+	<!-- nav bar -->
+	<nav class="navBar">
+		<div class="wrapper">
+			<!-- slide out button -->
+			<button class="menuIcon">
+				<img src="./assets/menu-button.svg" alt="button to open nav manu">
+			</button>
+			<!-- logo -->
+			<a href="./index.html" class="logo">
+				<h1>Toybox</h1>
+			</a>
+
+			<!-- cart -->
+			<div class="cartFlex">
+				<!-- search -->
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="search button" class="searchIcon">
+				</button>
+				<!-- bag -->
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bag-icon">
+				</a>
+
+				<!-- counter -->
+				<div class="counter">
+					<p>0</p>
+				</div>
+
+			</div><!-- end cartFlex -->
+
+		</div><!-- end wrapper -->
+
+		<!-- slide out nav -->
+		<div class="slideOutNav">
+			<!-- close button -->
+			<div class="navCloseButton">
+				<button>
+					<img src="./assets/menu-close.svg" alt="Close Slide Out Nav Menu">
+				</button>
+			</div><!-- end navCloseButton -->
+
+			<!-- nav and ul -->
+			<nav>
+				<ul class="mainMenu">
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Faq</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div><!-- end slideOutNav -->
+
+	</nav>
+
+
+
 </body>
+
 </html>
