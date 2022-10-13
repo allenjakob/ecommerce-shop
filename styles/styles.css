@@ -242,6 +242,10 @@ html {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Jakarta Sans";
   src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
@@ -414,4 +418,49 @@ a.button:hover {
 a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.navBar .cartFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navBar .cartFlex p {
+  margin-bottom: 0;
+  width: 24px;
+  height: 24px;
+  background: #084b6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 1.1;
+}
+.navBar .cartFlex .menuIcon,
+.navBar .cartFlex .bag {
+  margin-right: 15px;
+}
+
+.slideOutNav {
+  display: none;
 }
