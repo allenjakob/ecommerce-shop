@@ -481,6 +481,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 70px;
 }
 header .headerImgCon {
   width: 45%;
@@ -526,4 +527,32 @@ header .headerContentContainer {
 }
 .categoryGallery .item4 {
   background: #fff5f5;
+}
+
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .headerContentContainer {
+    padding: 0 50px;
+  }
+  .headerContentContainer h3 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerImgCon {
+    width: 100%;
+  }
+  header .headerContentContainer {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }
