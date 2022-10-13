@@ -1,0 +1,47 @@
+@use './variables';
+
+.categoryGallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .items {
+        width: 40%;
+        margin: 50px 25px 25px;
+        // curved edges
+        border-radius: 10%;
+        padding: 45px;
+        text-align: center;
+
+        img {
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+
+
+        // shrink effect
+        a {
+            display: block;
+            &:hover,
+            &:focus {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+
+    .item1 {
+        background: variables.$quinary;
+    }
+
+    .item2 {
+        background: variables.$secondary;
+    }
+
+    .item3 {
+        background: variables.$tertiary;
+    }
+
+    .item4 {
+        background: variables.$quaternary;
+    }
+}
