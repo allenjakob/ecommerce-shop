@@ -26,8 +26,7 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -140,8 +139,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -159,8 +157,7 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -203,13 +200,11 @@ template {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .sr-only {
@@ -340,7 +335,6 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -360,7 +354,6 @@ button {
   line-height: 1.2rem;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   /* style the button in the main nav menu to look just like an icon */
 }
@@ -415,7 +408,6 @@ a.button {
   font-weight: bold;
   line-height: 1.2rem;
   text-align: center;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 a.button:hover {
@@ -442,21 +434,13 @@ img {
   background: #fff;
 }
 .navBar .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 20px 0;
 }
 .navBar .cartFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .navBar .cartFlex p {
   margin-bottom: 0;
@@ -480,14 +464,9 @@ img {
 header {
   background: #f8fbf3;
   margin-bottom: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 70px;
 }
 header .headerImgCon {
@@ -499,11 +478,8 @@ header .headerContentContainer {
 }
 
 .categoryGallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .categoryGallery .items {
   width: 40%;
@@ -520,8 +496,7 @@ header .headerContentContainer {
   display: block;
 }
 .categoryGallery .items a:hover, .categoryGallery .items a:focus {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 .categoryGallery .item1 {
   background: #ffd698;
@@ -548,10 +523,7 @@ header .headerContentContainer {
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
   header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   header .headerImgCon {
     width: 100%;
@@ -562,51 +534,4 @@ header .headerContentContainer {
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
-}
-footer {
-  margin-top: 10px;
-  background-color: #084b6d;
-  color: #fff;
-  padding: 90px 0 50px 0;
-}
-footer .footerFlexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 90px;
-}
-footer .footerFlexContainer h4 {
-  color: #fff;
-}
-
-footer {
-  /* previous footer styles here */
-}
-footer .footerNav {
-  width: 40%;
-}
-footer .footerNav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer .footerNav nav ul {
-  width: 33%;
-}
-footer .footerNav nav a {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-}
-footer .footerNav nav a:hover {
-  color: white;
-}
-footer .footerNav nav a:focus {
-  color: white;
-}
+}/*# sourceMappingURL=styles.css.map */
